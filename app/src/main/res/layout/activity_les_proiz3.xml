@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/forest"
+    tools:context=".LesProiz3">
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="293dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="@string/tem1_3_1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="296dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="@string/tem1_3_2"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView33"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/textView33"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="297dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="@string/tem1_3_3"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView36"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/textView36"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/outputText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/newforest"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="РАСЧИТАТЬ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_4_input3"
+
+        android:layout_width="98dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/newforest"
+        android:ems="10"
+        android:hint="Ввод"
+        android:inputType="numberDecimal"
+        android:textColor="@color/newforest"
+        android:textColorHint="@color/newforest"
+        app:layout_constraintBottom_toTopOf="@+id/outputText3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_4_input2"
+
+        android:layout_width="98dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/newforest"
+        android:ems="10"
+        android:hint="Ввод"
+        android:inputType="numberDecimal"
+        android:textColor="@color/newforest"
+        android:textColorHint="@color/newforest"
+        app:layout_constraintBottom_toTopOf="@+id/outputText3"
+        app:layout_constraintEnd_toStartOf="@+id/edit_4_input3"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toEndOf="@+id/edit_4_input1" />
+
+    <EditText
+        android:id="@+id/edit_4_input1"
+
+        android:layout_width="98dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/newforest"
+        android:ems="10"
+        android:hint="Ввод"
+        android:inputType="numberDecimal"
+        android:textColor="@color/newforest"
+        android:textColorHint="@color/newforest"
+        app:layout_constraintBottom_toTopOf="@+id/outputText3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="@string/Klik1_3_2"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="@string/Klik1_3_1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_4_input2"
+        app:layout_constraintEnd_toEndOf="@+id/edit_4_input2"
+        app:layout_constraintStart_toStartOf="@+id/edit_4_input2"
+        app:srcCompat="@drawable/ic_h" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_4_input1"
+        app:layout_constraintEnd_toEndOf="@+id/edit_4_input1"
+        app:layout_constraintStart_toStartOf="@+id/edit_4_input1"
+        app:srcCompat="@drawable/ic_l" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_4_input3"
+        app:layout_constraintEnd_toEndOf="@+id/edit_4_input3"
+        app:layout_constraintStart_toStartOf="@+id/edit_4_input3"
+        app:srcCompat="@drawable/ic_liii" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:srcCompat="@drawable/ic_v_lhl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

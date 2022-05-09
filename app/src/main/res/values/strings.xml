@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">MiP</string>
+    <string name="Klik1">Лесопильное производство</string>
+    <string name="Klik2">Технологические процессы</string>
+    <string name="Klik3">Оборудование</string>
+    <string name="Klik4">Гидротермическая обработка древесины</string>
+    <string name="Klik4_0">Гидротермическая</string>
+    <string name="Klik4_0_1">обработка древесины</string>
+    <string name="Klik5">Экономика производства</string>
+    <string name="Name">MiP</string>
+    <string name="NameIcon">Технико-экономические</string>
+    <string name="NameIcons">расчёты по древообработке</string>
+    <string name="NameI">Диаметр бревна на середине его длинны</string>
+    <string name="Klik1_1">Диаметр бревна на середине</string>
+    <string name="Klik1_1_1">его длинны</string>
+    <string name="Klik1_2">Ёмкость штабеля круглого леса</string>
+    <string name="Klik1_2_2">на бирже сырья</string>
+    <string name="Klik1_3_1">Габаритный объём</string>
+    <string name="Klik1_3_2">штабеля</string>
+    <string name="Klik1_3_0">Габаритный объём штабеля</string>
+    <string name="Button">Ввод</string>
+    <string name="Klik2_0">Технологические</string>
+    <string name="Klik2.2_0">процессы</string>
+    <string name="Klik2_1">Ширина сырой доски</string>
+    <string name="Klik2_2">Расчет площади сортировочной </string>
+    <string name="Klik2_2_2">части бассейна</string>
+    <string name="Klik2_3_1">Расчет сортировочной</string>
+    <string name="Klik2_3_2">площадки</string>
+    <string name="Klik3_1_1">Число оборотов ведомого шкива</string>
+    <string name="Klik3_1_2">в ременной передаче</string>
+    <string name="Klik4_1_1">Число оборотов камеры</string>
+    <string name="Klik4_1_2">в течение года</string>
+    <string name="End">Coming soon...</string>
+    <string name="tem1_1">Где: dверш - диаметр вершины бревна (в см.) lбр - длинна бревна (в м.)</string>
+    <string name="tem1_2">Где: V -  габаритный объём штабеля </string>
+    <string name="tem1_2_2">Кшт - коэфецент заполнения штабеля(0,5)</string>
+    <string name="tem1_3_1">Где:L - длинна штабеля(м)</string>
+    <string name="tem1_3_2">H - высота штабеля(м)</string>
+    <string name="tem1_3_3">l - длинна леса(м)</string>
+    <string name="tem2_1_1">Где: d - диаметр вершины бревна (см) </string>
+    <string name="tem2_1_2"> Е - расстояние между наружными </string>
+    <string name="tem2_1_3">пластями досок (см)</string>
+    <string name="tem2_2_1">Где: l - максимальная длинна бревна(м) </string>
+    <string name="tem2_2_2"> b - длина сортировачного фронта(м) </string>
+    <string name="tem2_2_3">f - площадь приёнмной части(Мкв)</string>
+    <string name="tem2_3_1">Где: lп -длинна  приёмной </string>
+    <string name="tem2_3_2">lб -длинна браковочной </string>
+    <string name="tem2_3_3"> lт -длинна торцовочного </string>
+    <string name="tem2_3_4">lа -длинна антисептирующей</string>
+    <string name="tem2_3_5">lр -длинна разборной</string>
+    <string name="tem3_1_1">Где: n1 - число оборотов ведущего шкива(об/мин) </string>
+    <string name="tem3_1_2">d1 - диаметр ведущего шкива(мм) </string>
+    <string name="tem3_1_3">d2 -  диаметр ведомого шкива(мм)</string>
+    <string name="tem4_1_1">Где: t - продолжительность сушки материала(сутки)</string>
+    <string name="tem4_1_2">T - время, требуеое для загрузки</string>
+    <string name="tem4_1_3">и выгрузки материала (0,1 суток)</string>
+
+
+
+
+
+</resources>

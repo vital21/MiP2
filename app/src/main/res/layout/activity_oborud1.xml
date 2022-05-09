@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/forest"
+    tools:context=".Oborud_1">
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="284dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="@string/tem3_1_2"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView49"
+        app:layout_constraintStart_toStartOf="@+id/textView49"
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="284dp"
+        android:layout_height="47dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="@string/tem3_1_3"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView49"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView49"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="@string/tem3_1_1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView29" />
+
+    <TextView
+        android:id="@+id/outputText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/newforest"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="РАСЧИТАТЬ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_4_input3"
+
+        android:layout_width="98dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/newforest"
+        android:ems="10"
+        android:hint="Ввод"
+        android:inputType="numberDecimal"
+        android:textColor="@color/newforest"
+        android:textColorHint="@color/newforest"
+        app:layout_constraintBottom_toTopOf="@+id/outputText3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_4_input2"
+
+        android:layout_width="98dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/newforest"
+        android:ems="10"
+        android:hint="Ввод"
+        android:inputType="numberDecimal"
+        android:textColor="@color/newforest"
+        android:textColorHint="@color/newforest"
+        app:layout_constraintBottom_toTopOf="@+id/outputText3"
+        app:layout_constraintEnd_toStartOf="@+id/edit_4_input3"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toEndOf="@+id/edit_4_input1" />
+
+    <EditText
+        android:id="@+id/edit_4_input1"
+
+        android:layout_width="98dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/newforest"
+        android:ems="10"
+        android:hint="Ввод"
+        android:inputType="numberDecimal"
+        android:textColor="@color/newforest"
+        android:textColorHint="@color/newforest"
+        app:layout_constraintBottom_toTopOf="@+id/outputText3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="@string/Klik2_2_2"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="@string/Klik2_2"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:srcCompat="@drawable/ic_svg_editor_image__13__1" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_4_input1"
+        app:layout_constraintEnd_toEndOf="@+id/edit_4_input1"
+        app:layout_constraintStart_toStartOf="@+id/edit_4_input1"
+        app:srcCompat="@drawable/ic_n111" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_4_input2"
+        app:layout_constraintEnd_toEndOf="@+id/edit_4_input2"
+        app:layout_constraintStart_toStartOf="@+id/edit_4_input2"
+        app:srcCompat="@drawable/ic_d1" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_4_input3"
+        app:layout_constraintEnd_toEndOf="@+id/edit_4_input3"
+        app:layout_constraintStart_toStartOf="@+id/edit_4_input3"
+        app:srcCompat="@drawable/ic_d2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
