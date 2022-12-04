@@ -53,10 +53,6 @@ public class LesProiz1 extends AppCompatActivity {
                         String exeption="Ошибка ввода, введите снова";
                         textView.setText(exeption);
                     }
-                    if(a==69 && b==69){
-                        String exeption="Путин хуйло";
-                        textView.setText(exeption);
-                    }
 
                 }
                 catch(Exception e){

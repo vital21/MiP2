@@ -56,9 +56,6 @@ public class LesProiz3 extends AppCompatActivity {
                         String exeption="Ошибка ввода, введите снова";
                         textView.setText(exeption);
                     }
-                    if(l==L){
-                        textView.setText("Нихуя  ты ровно сложил");
-                    }
                     if(l<=L){
                         textView.setText("Длина штабеля меньше леса");
                     }

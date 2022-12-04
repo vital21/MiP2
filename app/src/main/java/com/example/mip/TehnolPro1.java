@@ -2,6 +2,9 @@ package com.example.mip;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
+import android.content.res.Resources;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +16,8 @@ public class TehnolPro1 extends AppCompatActivity {
     private EditText editText2;
     private TextView textView;
     private Button button;
+    DbSQLite dbSQLite;
+    private static final String theme = "Ширина сырой доски";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +26,7 @@ public class TehnolPro1 extends AppCompatActivity {
         editText=findViewById(R.id.edit_4_input_1_1);
         editText2=findViewById(R.id.edit_4_input_1_2);
         button=findViewById(R.id.button_2_1);
+        dbSQLite = new DbSQLite(this);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,7 +49,7 @@ public class TehnolPro1 extends AppCompatActivity {
                         answer=formula(a,b);
                         inputOne=Double.toString(answer);
                         textView.setText(inputOne+"(см)");
-
+                        db(inputOne,theme,dbSQLite);
                     }
                     else{
                         String exeption="Ошибка ввода, введите снова";
@@ -59,6 +65,13 @@ public class TehnolPro1 extends AppCompatActivity {
                 }
             }
         });
+    }
+    public static void db(String result, String theme, DbSQLite dbSQLite ){
+        SQLiteDatabase database = dbSQLite.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(DbSQLite.KEY_NAME, theme);
+        contentValues.put(DbSQLite.KEY_RESULT,result);
+        database.insert(DbSQLite.TABLE_WOOD,null,contentValues);
     }
     public static double formula(double a, double b){
         double answer=0;
