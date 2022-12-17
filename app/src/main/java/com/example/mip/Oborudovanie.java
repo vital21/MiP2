@@ -17,5 +17,9 @@ public class Oborudovanie extends AppCompatActivity {
         Intent intent=new Intent(this, Oborud_1.class);
         startActivity(intent);
     }
+    public void newOborud_2Activity(View view){
+        Intent intent=new Intent(this, Oborudovanie2.class);
+        startActivity(intent);
+    }
 
 }

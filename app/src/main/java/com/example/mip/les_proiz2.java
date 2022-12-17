@@ -12,10 +12,13 @@ public class les_proiz2 extends AppCompatActivity {
     private EditText editText;
     private TextView textView;
     private Button button;
+    private static final String theme = "Ёмкость штабеля круглого леса на бирже сырья";
+    DbSQLite dbSQLite;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_les_proiz2);
+        dbSQLite= new DbSQLite(this);
        textView=findViewById(R.id.outputText);
         editText=findViewById(R.id.edit_1_input2);
         button=findViewById(R.id.button);
@@ -35,6 +38,7 @@ public class les_proiz2 extends AppCompatActivity {
                         answer=formula(a);
                         inputOne=Double.toString(answer);
                         textView.setText(inputOne+"(v)");
+                        dbSQLite.db(inputOne,theme,dbSQLite);
 
                     }
                     else{

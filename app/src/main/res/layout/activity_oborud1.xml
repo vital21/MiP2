@@ -50,10 +50,10 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView29" />
 
     <TextView
-        android:id="@+id/outputText3"
+        android:id="@+id/outputText3_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:textColor="@color/newforest"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button_3"
@@ -65,58 +65,59 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:text="РАСЧИТАТЬ"
+        android:textColor="@color/newforest"
+        android:text="РАСCЧИТАТЬ"
+        style="@style/Widget.AppCompat.Button.Borderless"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/edit_4_input3"
+        android:id="@+id/edit_3_2_input3"
 
         android:layout_width="98dp"
         android:layout_height="77dp"
         android:layout_marginEnd="48dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="@color/newforest"
         android:ems="10"
         android:hint="Ввод"
         android:inputType="numberDecimal"
         android:textColor="@color/newforest"
         android:textColorHint="@color/newforest"
-        app:layout_constraintBottom_toTopOf="@+id/outputText3"
+        app:layout_constraintBottom_toTopOf="@+id/outputText3_2"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/edit_4_input2"
+        android:id="@+id/edit_3_2_input2"
 
         android:layout_width="98dp"
         android:layout_height="77dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="@color/newforest"
         android:ems="10"
         android:hint="Ввод"
         android:inputType="numberDecimal"
         android:textColor="@color/newforest"
         android:textColorHint="@color/newforest"
-        app:layout_constraintBottom_toTopOf="@+id/outputText3"
-        app:layout_constraintEnd_toStartOf="@+id/edit_4_input3"
+        app:layout_constraintBottom_toTopOf="@+id/outputText3_2"
+        app:layout_constraintEnd_toStartOf="@+id/edit_3_2_input3"
         app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toEndOf="@+id/edit_4_input1" />
+        app:layout_constraintStart_toEndOf="@+id/edit_3_2_input1" />
 
     <EditText
-        android:id="@+id/edit_4_input1"
+        android:id="@+id/edit_3_2_input1"
 
         android:layout_width="98dp"
         android:layout_height="77dp"
         android:layout_marginStart="48dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/newforest"
+        android:layout_marginBottom="10dp"
         android:ems="10"
         android:hint="Ввод"
         android:inputType="numberDecimal"
         android:textColor="@color/newforest"
         android:textColorHint="@color/newforest"
-        app:layout_constraintBottom_toTopOf="@+id/outputText3"
+        app:layout_constraintBottom_toTopOf="@+id/outputText3_2"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -176,29 +177,29 @@
         android:id="@+id/imageView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/edit_4_input1"
-        app:layout_constraintEnd_toEndOf="@+id/edit_4_input1"
-        app:layout_constraintStart_toStartOf="@+id/edit_4_input1"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_3_2_input1"
+        app:layout_constraintEnd_toEndOf="@+id/edit_3_2_input1"
+        app:layout_constraintStart_toStartOf="@+id/edit_3_2_input1"
         app:srcCompat="@drawable/ic_n111" />
 
     <ImageView
         android:id="@+id/imageView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/edit_4_input2"
-        app:layout_constraintEnd_toEndOf="@+id/edit_4_input2"
-        app:layout_constraintStart_toStartOf="@+id/edit_4_input2"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_3_2_input2"
+        app:layout_constraintEnd_toEndOf="@+id/edit_3_2_input2"
+        app:layout_constraintStart_toStartOf="@+id/edit_3_2_input2"
         app:srcCompat="@drawable/ic_d1" />
 
     <ImageView
         android:id="@+id/imageView32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/edit_4_input3"
-        app:layout_constraintEnd_toEndOf="@+id/edit_4_input3"
-        app:layout_constraintStart_toStartOf="@+id/edit_4_input3"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_3_2_input3"
+        app:layout_constraintEnd_toEndOf="@+id/edit_3_2_input3"
+        app:layout_constraintStart_toStartOf="@+id/edit_3_2_input3"
         app:srcCompat="@drawable/ic_d2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,13 +16,15 @@ public class TehnolPro3 extends AppCompatActivity {
     private EditText editText_5;
     private TextView textView;
     private Button button;
+    private static final String theme = "Расчет сортировочной площадки";
+    DbSQLite dbSQLite;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tehnol_pro3);
-
-        textView=findViewById(R.id.outputText3);
-        editText_1=findViewById(R.id.edit_4_input1);
+        dbSQLite= new DbSQLite(this);
+        textView=findViewById(R.id.outputText3_2);
+        editText_1=findViewById(R.id.edit_3_2_input1);
         editText_2=findViewById(R.id.edit_3_input3_b);
         editText_3=findViewById(R.id.edit_3_input3_t);
         editText_4=findViewById(R.id.edit_3_input3_a);
@@ -62,6 +64,7 @@ public class TehnolPro3 extends AppCompatActivity {
                         answer=formula(p,b,t,a,r);
                         answer_string=Double.toString(answer);
                         textView.setText(answer_string+"(м)");
+                        dbSQLite.db(answer_string,theme,dbSQLite);
 
                     }
                     else{

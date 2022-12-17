@@ -11,6 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class TehnolPro1 extends AppCompatActivity {
     private EditText editText;
     private EditText editText2;
@@ -21,12 +24,12 @@ public class TehnolPro1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        dbSQLite= new DbSQLite(this);
         setContentView(R.layout.activity_tehnol_pro1);
         textView=findViewById(R.id.OutputText_2_1);
         editText=findViewById(R.id.edit_4_input_1_1);
         editText2=findViewById(R.id.edit_4_input_1_2);
         button=findViewById(R.id.button_2_1);
-        dbSQLite = new DbSQLite(this);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,10 +49,11 @@ public class TehnolPro1 extends AppCompatActivity {
 
 
                     if((a>0 && b>0) && (a<1000 && b<1000) && a>=b) {
+
                         answer=formula(a,b);
                         inputOne=Double.toString(answer);
                         textView.setText(inputOne+"(см)");
-                        db(inputOne,theme,dbSQLite);
+                        dbSQLite.db(inputOne,theme,dbSQLite);
                     }
                     else{
                         String exeption="Ошибка ввода, введите снова";
@@ -66,13 +70,7 @@ public class TehnolPro1 extends AppCompatActivity {
             }
         });
     }
-    public static void db(String result, String theme, DbSQLite dbSQLite ){
-        SQLiteDatabase database = dbSQLite.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(DbSQLite.KEY_NAME, theme);
-        contentValues.put(DbSQLite.KEY_RESULT,result);
-        database.insert(DbSQLite.TABLE_WOOD,null,contentValues);
-    }
+
     public static double formula(double a, double b){
         double answer=0;
         answer= Math.sqrt((a*a)-(b*b));

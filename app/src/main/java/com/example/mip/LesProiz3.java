@@ -13,15 +13,18 @@ public class LesProiz3 extends AppCompatActivity {
     private EditText editText_2;
     private EditText editText_3;
     private TextView textView;
+    private static final String theme = "Габаритный обьем штабеля";
+    DbSQLite dbSQLite;
     private Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_les_proiz3);
-        textView=findViewById(R.id.outputText3);
-        editText_1=findViewById(R.id.edit_4_input1);
-        editText_2=findViewById(R.id.edit_4_input2);
-        editText_3=findViewById(R.id.edit_4_input3);
+        dbSQLite= new DbSQLite(this);
+        textView=findViewById(R.id.outputText3_2);
+        editText_1=findViewById(R.id.edit_3_2_input1);
+        editText_2=findViewById(R.id.edit_3_2_input2);
+        editText_3=findViewById(R.id.edit_3_2_input3);
         button=findViewById(R.id.button_3);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +53,7 @@ public class LesProiz3 extends AppCompatActivity {
                         answer=formula(L,H,l);
                         answer_string=Double.toString(answer);
                         textView.setText(answer_string+"(М.куб)");
+                        dbSQLite.db(answer_string,theme,dbSQLite);
 
                     }
                     else{

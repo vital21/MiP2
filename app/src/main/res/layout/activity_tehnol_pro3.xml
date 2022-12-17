@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView45" />
 
     <TextView
-        android:id="@+id/outputText3"
+        android:id="@+id/outputText3_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
@@ -90,17 +90,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:text="РАСЧИТАТЬ"
+        android:textColor="@color/newforest"
+        android:text="РАСCЧИТАТЬ"
+        style="@style/Widget.AppCompat.Button.Borderless"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/edit_4_input1"
+        android:id="@+id/edit_3_2_input1"
 
         android:layout_width="65dp"
         android:layout_height="54dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="5dp"
         android:layout_marginBottom="28dp"
         android:backgroundTint="@color/newforest"
         android:ems="10"
@@ -108,7 +110,7 @@
         android:inputType="numberDecimal"
         android:textColor="@color/newforest"
         android:textColorHint="@color/newforest"
-        app:layout_constraintBottom_toTopOf="@+id/outputText3"
+        app:layout_constraintBottom_toTopOf="@+id/outputText3_2"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -116,7 +118,7 @@
 
         android:layout_width="65dp"
         android:layout_height="54dp"
-        android:layout_marginStart="11dp"
+        android:layout_marginStart="8dp"
         android:layout_marginBottom="28dp"
         android:backgroundTint="@color/newforest"
         android:ems="10"
@@ -124,15 +126,15 @@
         android:inputType="numberDecimal"
         android:textColor="@color/newforest"
         android:textColorHint="@color/newforest"
-        app:layout_constraintBottom_toTopOf="@+id/outputText3"
-        app:layout_constraintStart_toEndOf="@+id/edit_4_input1" />
+        app:layout_constraintBottom_toTopOf="@+id/outputText3_2"
+        app:layout_constraintStart_toEndOf="@+id/edit_3_2_input1" />
 
     <EditText
         android:id="@+id/edit_3_input3_t"
 
         android:layout_width="65dp"
         android:layout_height="54dp"
-        android:layout_marginStart="11dp"
+        android:layout_marginStart="8dp"
         android:layout_marginBottom="28dp"
         android:backgroundTint="@color/newforest"
         android:ems="10"
@@ -140,7 +142,7 @@
         android:inputType="numberDecimal"
         android:textColor="@color/newforest"
         android:textColorHint="@color/newforest"
-        app:layout_constraintBottom_toTopOf="@+id/outputText3"
+        app:layout_constraintBottom_toTopOf="@+id/outputText3_2"
         app:layout_constraintStart_toEndOf="@+id/edit_3_input3_b" />
 
     <EditText
@@ -148,7 +150,7 @@
 
         android:layout_width="65dp"
         android:layout_height="54dp"
-        android:layout_marginStart="11dp"
+        android:layout_marginStart="8dp"
         android:layout_marginBottom="28dp"
         android:backgroundTint="@color/newforest"
         android:ems="10"
@@ -156,7 +158,7 @@
         android:inputType="numberDecimal"
         android:textColor="@color/newforest"
         android:textColorHint="@color/newforest"
-        app:layout_constraintBottom_toTopOf="@+id/outputText3"
+        app:layout_constraintBottom_toTopOf="@+id/outputText3_2"
         app:layout_constraintStart_toEndOf="@+id/edit_3_input3_t" />
 
     <EditText
@@ -164,7 +166,7 @@
 
         android:layout_width="65dp"
         android:layout_height="54dp"
-        android:layout_marginStart="11dp"
+        android:layout_marginStart="8dp"
         android:layout_marginBottom="28dp"
         android:backgroundTint="@color/newforest"
         android:ems="10"
@@ -172,7 +174,7 @@
         android:inputType="numberDecimal"
         android:textColor="@color/newforest"
         android:textColorHint="@color/newforest"
-        app:layout_constraintBottom_toTopOf="@+id/outputText3"
+        app:layout_constraintBottom_toTopOf="@+id/outputText3_2"
         app:layout_constraintStart_toEndOf="@+id/edit_3_input3_a" />
 
     <ImageView
@@ -243,9 +245,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
-        app:layout_constraintBottom_toTopOf="@+id/edit_4_input1"
-        app:layout_constraintEnd_toEndOf="@+id/edit_4_input1"
-        app:layout_constraintStart_toStartOf="@+id/edit_4_input1"
+        app:layout_constraintBottom_toTopOf="@+id/edit_3_2_input1"
+        app:layout_constraintEnd_toEndOf="@+id/edit_3_2_input1"
+        app:layout_constraintStart_toStartOf="@+id/edit_3_2_input1"
         app:srcCompat="@drawable/ic_lppp_" />
 
     <ImageView

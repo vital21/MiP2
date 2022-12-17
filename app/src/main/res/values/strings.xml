@@ -6,9 +6,10 @@
     <string name="Klik4">Гидротермическая обработка древесины</string>
     <string name="Klik4_0">Гидротермическая</string>
     <string name="Klik4_0_1">обработка древесины</string>
-    <string name="Klik5">Экономика производства</string>
+    <string name="Klik5">История расчетов</string>
+    <string name="Klik5_1">История всех расчетов</string>
     <string name="Name">MiP</string>
-    <string name="NameIcon">Технико-экономические</string>
+    <string name="NameIcon">Технические</string>
     <string name="NameIcons">расчёты по древообработке</string>
     <string name="NameI">Диаметр бревна на середине его длинны</string>
     <string name="Klik1_1">Диаметр бревна на середине</string>
@@ -51,12 +52,27 @@
     <string name="tem3_1_1">Где: n1 - число оборотов ведущего шкива(об/мин) </string>
     <string name="tem3_1_2">d1 - диаметр ведущего шкива(мм) </string>
     <string name="tem3_1_3">d2 -  диаметр ведомого шкива(мм)</string>
+    <string name="Klik3_22">Расчет числа оборотов зубчатого</string>
+    <string name="Klik3_33">колеса червячной передачи</string>
+    <string name="tem3_2_1">Расчет числа оборотов</string>
+    <string name="tem3_2_2">зубчатого колеса</string>
+    <string name="tem3_2_11">Где: n - обороты червяка</string>
+    <string name="tem3_2_111">черв</string>
+    <string name="tem3_2_22">m - кол. ходов червяка</string>
+    <string name="tem3_2_33">Z - число зубьев колеса</string>
+    <string name="tem3_2_3">червячной передачи</string>
     <string name="tem4_1_1">Где: t - продолжительность сушки материала(сутки)</string>
     <string name="tem4_1_2">T - время, требуеое для загрузки</string>
     <string name="tem4_1_3">и выгрузки материала (0,1 суток)</string>
+    <string name="clearDb">Очистить историю</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
 
-
-
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 
 </resources>

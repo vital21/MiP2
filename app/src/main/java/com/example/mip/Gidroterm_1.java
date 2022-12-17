@@ -12,11 +12,14 @@ public class Gidroterm_1 extends AppCompatActivity {
     private EditText editText;
     private EditText editText2;
     private TextView textView;
+    private static final String theme = "Число оборотов камеры в течении года";
+    DbSQLite dbSQLite;
     private Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gidroterm1);
+        dbSQLite= new DbSQLite(this);
         textView=findViewById(R.id.OutputText_2_1);
         editText=findViewById(R.id.edit_4_input_1_1);
         editText2=findViewById(R.id.edit_4_input_1_2);
@@ -43,6 +46,7 @@ public class Gidroterm_1 extends AppCompatActivity {
                         answer=formula(a,b);
                         inputOne=Double.toString(answer);
                         textView.setText(inputOne+"(об)");
+                        dbSQLite.db(inputOne,theme,dbSQLite);
 
                     }
                     else{

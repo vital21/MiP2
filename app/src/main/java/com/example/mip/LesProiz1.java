@@ -15,12 +15,14 @@ public class LesProiz1 extends AppCompatActivity {
     private EditText editText2;
     private TextView textView;
     private Button button;
+    private static final String theme = "Диаметр бревна на середине его длины";
+    DbSQLite dbSQLite;
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_les_proiz1);
-
+        dbSQLite= new DbSQLite(this);
         textView=findViewById(R.id.OutputText_2_1);
        editText=findViewById(R.id.edit_4_input_1_1);
         editText2=findViewById(R.id.edit_4_input_1_2);
@@ -47,6 +49,7 @@ public class LesProiz1 extends AppCompatActivity {
                         answer=formula(a,b);
                         inputOne=Double.toString(answer);
                         textView.setText(inputOne+"(см)");
+                        dbSQLite.db(inputOne,theme,dbSQLite);
 
                     }
                     else{

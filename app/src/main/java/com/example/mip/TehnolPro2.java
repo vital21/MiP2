@@ -13,15 +13,20 @@ public class TehnolPro2 extends AppCompatActivity {
     private EditText editText_2;
     private EditText editText_3;
     private TextView textView;
+    private static final String theme = "Расчет площади сортировочной части бассейна";
     private Button button;
+
+
+    DbSQLite dbSQLite;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        dbSQLite= new DbSQLite(this);
         setContentView(R.layout.activity_tehnol_pro2);
-        textView=findViewById(R.id.outputText3);
-        editText_1=findViewById(R.id.edit_4_input1);
-        editText_2=findViewById(R.id.edit_4_input2);
-        editText_3=findViewById(R.id.edit_4_input3);
+        textView=findViewById(R.id.outputText3_2);
+        editText_1=findViewById(R.id.edit_3_2_input1);
+        editText_2=findViewById(R.id.edit_3_2_input2);
+        editText_3=findViewById(R.id.edit_3_2_input3);
         button=findViewById(R.id.button_3);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +56,7 @@ public class TehnolPro2 extends AppCompatActivity {
                         answer=formula(L,H,l);
                         answer_string=Double.toString(answer);
                         textView.setText(answer_string+"(м)");
+                        dbSQLite.db(answer_string,theme,dbSQLite);
 
                     }
                     else{
